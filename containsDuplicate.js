@@ -1,6 +1,6 @@
-var containsDuplicates = (array) => {
-    for (let i = 0; i < array.length; i++) {
-        if (array.indexOf(array[i]) !== array.lastIndexOf(array[i])) {
+var containsDuplicates = (nums) => {
+    for (let i = 0; i < nums.length; i++) {
+        if (nums.indexOf(nums[i]) !== nums.lastIndexOf(nums[i])) {
             return true;
         }
     }
