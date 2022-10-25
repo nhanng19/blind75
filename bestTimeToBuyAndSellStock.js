@@ -10,7 +10,8 @@ var maxProfit = (prices) => {
             profit = currentProfit
         }
     }
-    console.log(profit);
+    return (profit);
 }
 
 maxProfit([7, 1, 5, 3, 6, 4]);
+
