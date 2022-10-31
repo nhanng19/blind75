@@ -17,4 +17,3 @@ const product = nums => {
 
   console.log(results)
 }
-
