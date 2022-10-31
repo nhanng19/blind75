@@ -1,4 +1,6 @@
-var productExceptSelf = function (nums) {
+product([1, 2, 3, 4]);
+
+const product = nums => {
   let results = [];
   let left = 1;
   let right = 1;
@@ -12,7 +14,7 @@ var productExceptSelf = function (nums) {
     results[i] = right * results[i];
     right = right * nums[i];
   }
-  console.log(results);
-};
 
-product([1, 2, 3, 4]);
+  console.log(results)
+}
+
