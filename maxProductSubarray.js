@@ -1,3 +1,5 @@
+productMax([2, 3, -2, 4]);
+
 const maxProduct = nums => {
   let currentMax = nums[0];
   let currentMin = nums[0];
@@ -6,12 +8,8 @@ const maxProduct = nums => {
   for (let i = 1; i < nums.length; i++) {
     let temp = currentMax;
     currentMax = Math.max(Math.max(currentMax * nums[i], currentMin * nums[i]), nums[i]);
-    currentMin = Math.max(Math.max(temp * nums[i], currentMin * nums[i]), nums[i])
-    finalMax = Math.max(Math.max(currentMax, finalMax));
+    currentMin = Math.max(Math.max(temp * nums[i], currentMin * nums[i]), nums[i]);
+    finalMax = Math.max(currentMax, finalMax);
   }
-  console.log(finalMax)
+  return finalMax;
 }
-
-productMax([2, 3, -2, 4]);
-
-
