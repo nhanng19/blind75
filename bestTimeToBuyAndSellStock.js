@@ -1,6 +1,7 @@
 const stock = (prices) => {
   let profit = 0;
   let buyStock = prices[0];
+
   for (let i = 1; i < prices.length; i++) {
     if (buyStock > prices[i]) {
       buyStock = prices[i];
@@ -10,7 +11,7 @@ const stock = (prices) => {
       profit = currentProfit;
     }
   }
-  console.log(profit);
+  return profit;
 };
 
 stock([7, 1, 5, 3, 6, 4]);
