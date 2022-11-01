@@ -10,5 +10,6 @@ const twoSum = (nums, target) => {
       }
     }
   }
-  console.log(results);
+  return results;
 };
+
