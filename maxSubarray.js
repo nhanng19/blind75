@@ -9,8 +9,7 @@ const maxSubArray = (nums) => {
     currentSum += nums[i];
     maxSum = Math.max(currentSum, maxSum);
   }
-  return maxSum;
+  console.log(maxSum);
 };
 
 maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]);
-
