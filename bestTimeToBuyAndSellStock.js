@@ -1,4 +1,6 @@
-const stock = (prices) => {
+stock([7, 1, 5, 3, 6, 4]);
+
+const stock = prices => {
   let profit = 0;
   let buyStock = prices[0];
 
@@ -12,6 +14,4 @@ const stock = (prices) => {
     }
   }
   return profit;
-};
-
-stock([7, 1, 5, 3, 6, 4]);
+}
