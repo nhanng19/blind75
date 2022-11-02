@@ -1,5 +1,6 @@
 twoSum([2, 7, 11, 15], 9);
 
+
 const twoSum = (nums, target) => {
   let results = [];
   for (let i = 0; i < nums.length; i++) {
@@ -10,6 +11,5 @@ const twoSum = (nums, target) => {
       }
     }
   }
-  return results;
-};
-
+  console.log(results)
+}
