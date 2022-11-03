@@ -1,16 +1,16 @@
-const minimum = nums => {
+minimumSorted([10, 8, 13, 12, 5, 9])
+
+const minimumSorted = nums => {
     let left = 0;
     let right = nums.length - 1;
 
     while (left < right) {
-        const mid = left + Math.floor((right - left) / 2)
+        const mid = left + Math.floor((right - left) / 2);
         if (nums[right] >= nums[mid]) {
             right = mid;
         } else {
             left = mid + 1;
         }
     }
-    console.log(nums[left])
+    return nums[left];
 }
-
-minimum([10, 8, 13, 12, 5, 9])
