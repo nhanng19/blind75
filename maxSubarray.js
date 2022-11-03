@@ -1,6 +1,6 @@
-maxSub([-2, 1, -3, 4, -1, 2, 1, -5, 4]);
+maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]);
 
-const maxSub = nums => {
+const maxSubArray = nums => {
   let maxSum = nums[0];
   let currentSum = 0;
 
@@ -11,5 +11,5 @@ const maxSub = nums => {
     currentSum += nums[i];
     maxSum = Math.max(currentSum, maxSum);
   }
-  return maxSum;
+  return maxSum
 }
