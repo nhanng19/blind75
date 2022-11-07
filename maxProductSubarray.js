@@ -20,3 +20,10 @@ const maxProductSubArray = nums => {
   return finalMax;
 }
 
+const maxProductSubArray = nums => {
+  let currentMax = nums[0];
+  let currentMin = nums[0];
+  let finalMax = nums[0];
+
+  
+}
