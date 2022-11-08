@@ -4,23 +4,20 @@
 
 // You must write an algorithm that runs in O(n) time and without using the division operation.
 
+product([1, 2, 3, 4]);
+
 const product = nums => {
   let results = [];
   let left = 1;
   let right = 1;
-
   for (let i = 0; i < nums.length; i++) {
     results[i] = left;
-    left *= nums[i];
+    left = left * nums[i];
   }
 
   for (let i = nums.length - 1; i >= 0; i--) {
     results[i] = right * results[i];
-    right *= nums[i];
+    right = right * nums[i];
   }
-
-  console.log(results);
+  return results;
 }
-
-product([1, 2, 3, 4]);
-
