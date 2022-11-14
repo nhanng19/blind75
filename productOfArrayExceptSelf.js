@@ -4,12 +4,14 @@
 
 // You must write an algorithm that runs in O(n) time and without using the division operation.
 
-product([1, 2, 3, 4]);
+productArray([1, 2, 3, 4]);
 
-const product = nums => {
-  let results = [];
+
+const productArray = nums => {
   let left = 1;
   let right = 1;
+  let results = [];
+
   for (let i = 0; i < nums.length; i++) {
     results[i] = left;
     left = left * nums[i];
