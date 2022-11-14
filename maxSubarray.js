@@ -2,10 +2,9 @@
 // subarray
 //  which has the largest sum and return its sum.
 
-maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]);
+maxSub([-2, 1, -3, 4, -1, 2, 1, -5, 4]);
 
-
-const maxSubArray = nums => {
+const maxSub = nums => {
   let currentSum = 0;
   let maxSum = nums[0];
 
@@ -16,5 +15,5 @@ const maxSubArray = nums => {
     currentSum += nums[i];
     maxSum = Math.max(currentSum, maxSum);
   }
-  return maxSum; 
+  return maxSum;
 }
