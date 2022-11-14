@@ -4,10 +4,9 @@
 // 
 // The test cases are generated so that the answer will fit in a 32-bit integer.
 
-maxProductSubArray([2, 3, -2, 4]);
+maxProduct([2, 3, -2, 4]);
 
-
-const maxProductSubArray = nums => {
+const maxProduct = nums => {
   let currentMax = nums[0];
   let currentMin = nums[0];
   let finalMax = nums[0];
