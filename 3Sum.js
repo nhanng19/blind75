@@ -9,7 +9,7 @@ const sumThree = nums => {
   nums.sort((a, b) => a - b);
 
   for (let i = 0; i < nums.length - 2; i++) {
-    if (nums[i] !== nums[1 - 1]) {
+    if (nums[i] !== nums[i - 1]) {
       let left = i + 1;
       let right = nums.length - 1;
 
@@ -32,3 +32,5 @@ const sumThree = nums => {
   }
   return result;
 }
+
+
