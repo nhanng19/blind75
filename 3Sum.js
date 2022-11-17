@@ -4,7 +4,7 @@
 
 sumThree([-1, 0, 1, 2, -1, -4]);
 
-const sumThree = nums => {
+const sumThree = (nums) => {
   const result = [];
   nums.sort((a, b) => a - b);
 
@@ -16,13 +16,12 @@ const sumThree = nums => {
       while (left < right) {
         let sum = nums[i] + nums[left] + nums[right];
         if (sum === 0) {
-          result.push([nums[i], nums[left], nums[right]])
+          result.push([nums[i], nums[left], nums[right]]);
           while (nums[left] === nums[left + 1]) left++;
           while (nums[right] === nums[right - 1]) right--;
           left++;
           right--;
-        }
-        else if (currentSum < 0) {
+        } else if (currentSum < 0) {
           left++;
         } else if (currentSum > 0) {
           right--;
@@ -31,6 +30,7 @@ const sumThree = nums => {
     }
   }
   return result;
-}
+};
 
 
+1
