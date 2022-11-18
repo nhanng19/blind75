@@ -1,4 +1,4 @@
-const isAnagram = (s, t) => {
+const anagram = (s, t) => {
   if (s.length !== t.length) {
     return false;
   }
@@ -19,4 +19,5 @@ const isAnagram = (s, t) => {
   }
   return true;
 };
+
 
