@@ -24,3 +24,4 @@ const minimumSorted = nums => {
     }
     return nums[left];
 }
+
