@@ -33,4 +33,3 @@ const sumThree = (nums) => {
 };
 
 
-1
