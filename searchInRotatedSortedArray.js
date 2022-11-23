@@ -6,9 +6,9 @@
 
 // You must write an algorithm with O(log n) runtime complexity.
 
-arraySearch([1, 3, 5, 6, 7, 8], 6);
+searchArray([1, 3, 5, 6, 7, 8], 6);
 
-const arraySearch = (nums, target) => {
+const searchArray = (nums, target) => {
   let left = 0;
   let right = nums.length - 1;
 
@@ -33,4 +33,3 @@ const arraySearch = (nums, target) => {
   }
   return -1;
 };
-
