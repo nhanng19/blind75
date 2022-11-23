@@ -6,7 +6,7 @@
 
 productArray([1, 2, 3, 4]);
 
-const arrayProduct = nums => {
+const arrayProduct = (nums) => {
   let left = 1;
   let right = 1;
   let result = [];
@@ -21,4 +21,20 @@ const arrayProduct = nums => {
     right = nums[i] * right;
   }
   return result;
-}
+};
+
+productArray = (nums) => {
+  let left = 1;
+  let right = 1;
+  let result = [];
+  for (let i = 0; i < nums.length; i++) {
+    result[i] = left;
+    left *= nums[i];
+  }
+
+  for (let i = nums.length - 1; i >= 0; i--) {
+    result[i] = right * result[i];
+    right *= nums[i];
+  }
+  return result;
+};
