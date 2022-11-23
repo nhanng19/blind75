@@ -8,20 +8,34 @@
 
 // You must write an algorithm that runs in O(log n) time.
 
-minimumSorted([10, 8, 13, 12, 5, 9])
+minimumSorted([10, 8, 13, 12, 5, 9]);
 
-const minimumSorted = nums => {
-    let left = 0;
-    let right = nums.length - 1;
+const minimumSorted = (nums) => {
+  let left = 0;
+  let right = nums.length - 1;
 
-    while (left < right) {
-        let mid = left + Math.floor((right - left) / 2);
-        if (nums[right] >= nums[mid]) {
-            right = mid;
-        } else {
-            left = mid + 1;
-        }
+  while (left < right) {
+    let mid = left + Math.floor((right - left) / 2);
+    if (nums[right] >= nums[mid]) {
+      right = mid;
+    } else {
+      left = mid + 1;
+    }
+  }
+  return nums[left];
+};
+
+const sortedMinimum = (nums) => {
+  let left = 0;
+  let right = nums.length - 1;
+
+  while (left < right) {
+    let mid = left + Math.floor((right - left) / 2);
+    if (nums[mid] <= nums[right]) {
+      right = mid;
+    } else {
+      left = mid + 1;
+    }
     }
     return nums[left];
-}
-
+};
